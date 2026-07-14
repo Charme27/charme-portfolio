@@ -13,27 +13,30 @@
 
     <h2>Charme</h2>
 
-    <nav>
+    <header>
+
+    <h2>Charme</h2>
+
+    <!-- Hamburger Button -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <nav id="navbar">
 
         <a href="#home">Home</a>
-
         <a href="#about">About</a>
-
         <a href="#education">Education</a>
-
         <a href="#skills">Skills</a>
-
         <a href="#projects">Projects</a>
-
         <a href="#experience">Experience</a>
-
         <a href="#achievements">Achievements</a>
-
         <a href="#profiles">Profiles</a>
-
         <a href="#contact">Contact</a>
 
     </nav>
+
+</header>
 
 </header>
 
@@ -212,7 +215,6 @@
                 <li>Responsive Glassmorphism UI</li>
             </ul>
 
-            <button>View Project</button>
 
         </div>
 
@@ -223,9 +225,14 @@
             <h3>Public Service Counter Token System</h3>
 
             <p>
-                Developed a token management system for public service centers
-                to streamline citizen service requests and grievance handling.
-                The system improves queue management and operational efficiency.
+                <p>
+                    Developed a web-based Public Service Counter Token Management System
+                    to simplify queue management and improve customer service efficiency.
+                    The system generates digital tokens, manages service queues in real time,
+                    reduces waiting time, and enables staff to handle customers in an
+                    organized manner. It provides a smooth and user-friendly experience
+                    for both citizens and service administrators.
+</p>
             </p>
 
             <ul>
@@ -235,7 +242,6 @@
                 <li>Service Analytics</li>
             </ul>
 
-            <button>View Project</button>
 
         </div>
 
@@ -246,9 +252,11 @@
             <h3>DustXtract</h3>
 
             <p>
-                Developed an innovative system to remove dust accumulated
-                inside air conditioners, helping improve air quality and
-                cooling efficiency.
+                DustXtract is an innovative solution designed to remove dust
+                accumulated inside air conditioners, improving cooling efficiency
+                and indoor air quality. The system focuses on reducing maintenance
+                efforts, extending the lifespan of AC units, and promoting a healthier
+                environment through efficient dust extraction techniques.
             </p>
 
             <ul>
@@ -257,7 +265,6 @@
                 <li>Enhances Cooling Efficiency</li>
             </ul>
 
-            <button>View Project</button>
 
         </div>
 
@@ -296,6 +303,11 @@
                 and functionality. Gained hands-on experience with industry-standard testing
                 methodologies, debugging techniques, and defect tracking processes.
             </p>
+            <a href="certificates/Veryx_Internship_Certificate.pdf"
+            target="_blank"
+            class="certificate-btn">
+            📄 View Internship Certificate
+</a>
 
         </div>
 
@@ -522,12 +534,22 @@
 
     <!-- FOOTER -->
     <footer>
-      <footer>
 
     <p>© 2026 Charme M | All Rights Reserved.</p>
 
 </footer>
-    </footer>
+<script>
 
+const menuToggle = document.getElementById("menu-toggle");
+
+const navbar = document.getElementById("navbar");
+
+menuToggle.addEventListener("click",function(){
+
+    navbar.classList.toggle("active");
+
+});
+
+</script>
 </body>
 </html>
